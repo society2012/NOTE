@@ -1,0 +1,37 @@
+//
+//  MyNote-prefix.pch
+//  MyNote
+//
+//  Created by hupeng on 2017/6/15.
+//  Copyright © 2017年 m.zintao. All rights reserved.
+//
+
+#ifndef MyNote_prefix_pch
+#define MyNote_prefix_pch
+
+#ifdef DEBUG
+#   define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#   define NSLog(...) {}
+#endif
+
+
+#import "BaseViewController.h"
+#import "AppDelegate.h"
+#import "UIView+Extension.h"
+#import "AFNetWorking.h"
+#import "UIView+ActivityIndicatorView.h"
+#import "MJRefresh.h"
+
+
+#define ScreenW ([UIScreen mainScreen].bounds.size.width)
+
+
+#define ScreenH ([UIScreen mainScreen].bounds.size.height)
+
+#define RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1.0]
+
+#define RGBVCOLOR(v) RGBCOLOR(((v&0xFF0000)>>16),((v&0xFF00)>>8),(v&0xFF))
+
+
+#endif

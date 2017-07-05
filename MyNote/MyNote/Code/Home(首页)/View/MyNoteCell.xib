@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MyNoteCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rjW-4n-mce">
+                        <rect key="frame" x="10" y="10" width="80" height="79.5"/>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="zuQ-3y-SEt"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的家来这家江西" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5Q-Xi-oXF">
+                        <rect key="frame" x="100" y="10" width="210" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="cJa-cR-x47"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nxcxmzncwqewrewrewrewrewrnxcxmznxcxmzncwqew" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dok-6X-Jxj">
+                        <rect key="frame" x="100" y="40" width="210" height="31.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="22L-3o-vha"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Q5Q-Xi-oXF" secondAttribute="trailing" constant="10" id="GVp-Oe-kAA"/>
+                    <constraint firstItem="Q5Q-Xi-oXF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Lc2-6V-tMA"/>
+                    <constraint firstItem="Dok-6X-Jxj" firstAttribute="leading" secondItem="rjW-4n-mce" secondAttribute="trailing" constant="10" id="N6v-wd-Ms5"/>
+                    <constraint firstAttribute="trailing" secondItem="Dok-6X-Jxj" secondAttribute="trailing" constant="10" id="Zj4-rM-LRM"/>
+                    <constraint firstItem="Q5Q-Xi-oXF" firstAttribute="leading" secondItem="rjW-4n-mce" secondAttribute="trailing" constant="10" id="cH1-BB-gZO"/>
+                    <constraint firstAttribute="bottom" secondItem="rjW-4n-mce" secondAttribute="bottom" constant="10" id="cid-Zk-Kix"/>
+                    <constraint firstItem="rjW-4n-mce" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="dMC-rI-uJs"/>
+                    <constraint firstItem="rjW-4n-mce" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="jqi-2m-eqv"/>
+                    <constraint firstItem="Dok-6X-Jxj" firstAttribute="top" secondItem="Q5Q-Xi-oXF" secondAttribute="bottom" constant="10" id="l1Z-Q7-Hbk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descLabel" destination="Dok-6X-Jxj" id="UbE-lC-gQ8"/>
+                <outlet property="pic" destination="rjW-4n-mce" id="Q0e-1S-spb"/>
+                <outlet property="titleLabel" destination="Q5Q-Xi-oXF" id="Hcn-Kq-S6L"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
